@@ -2,13 +2,15 @@
 pragma solidity ^0.8.13;
 
 contract Counter {
-    uint256 public number;
+    uint256 public chainId;
+    uint256 public counter;
 
-    function setNumber(uint256 newNumber) public {
-        number = newNumber;
+    constructor(uint256 _chainId, uint256 _counter) {
+        chainId = _chainId;
+        counter = _counter;
     }
 
-    function increment() public {
-        number++;
+    function incrementCounter() public {
+        counter++;
     }
 }
