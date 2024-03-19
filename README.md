@@ -1,5 +1,21 @@
 # Foundry Boiler Plate
 
+## Load Environment Variable
+
+Load env file while working with commands
+
+```bash
+source .env
+```
+
+this will load `.env` in the terminal.
+
+## Deploy Smart Contract
+
+```shell
+forge script script/Counter.s.sol:CounterScript --rpc-url $SEPOLIA_RPC --private-key $PRIVATE_KEY
+```
+
 ## Foundry
 
 **Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
